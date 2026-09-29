@@ -1,0 +1,15 @@
+oil-twin/
+├── .streamlit/config.toml        light theme
+├── data/                          raw + processed (auto-created)
+├── src/
+│   ├── config.py                  units, anchors, thresholds
+│   ├── viscosity_model.py         Arrhenius + Baghewala anchors
+│   ├── trajectory.py              CSS cooling
+│   ├── srp_physics.py             API RP 11L equations + guardrail
+│   ├── data_loader.py             NK load + synthetic fallback + pivot
+│   ├── production_model.py        Gradient Boosting + quantiles
+│   ├── anomaly.py                 autoencoder detector
+│   └── optimizer.py               constrained SPM grid search
+├── app.py                         Streamlit dashboard
+├── requirements.txt
+└── README.md
